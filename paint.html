@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painting Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" href="favicon.jpeg" type="image/x-icon">
+    <script src="fontawesome/js/all.js"></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            height: 100vh;
+            background: linear-gradient(45deg, rgb(0, 92, 197), rgb(150, 150, 196), rgb(28, 56, 90));
+            background-size: 1000% 1000%;
+            animation: gradientAnimation 15s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .navbar { transition: background-color 0.3s; }
+        .navbar:hover { background-color: rgba(0, 0, 0, 0.8); }
+        .btn:hover { transform: scale(1.05); }
+        .section { background-color: rgb(50, 105, 168); padding: 50px 0; }
+        h1, h2 { font-weight: 700; }
+        .text-white { transition: color 0.3s; }
+        .text-white:hover { color: rgba(255, 255, 255, 0.8); }
+
+        .fixed-image {
+            height: 250px;
+            object-fit: cover;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="favicon.png" style="height: 50px; border-radius:50%; border:2px solid white";>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html" ><i class="fa-solid fa-house"></i> Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"><i class="fa-solid fa-circle-info"></i> About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacts.html"><i class="fa-regular fa-address-book"></i> Contacts</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              <a href="logout.html" class="text-decoration-none text-white"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+            </span>
+          </div>
+        </div>
+    </nav>
+
+    <header class="header text-center py-5 text-white">
+        <h1 class="pt-5">Expert Painting Services</h1>
+    </header>
+    
+    <div class="container mt-4 pb-5 text-white">
+        <h2>Overview</h2>
+        <p>At our painting service, we specialize in transforming spaces with high-quality painting solutions. Whether for residential or commercial projects, our team is dedicated to delivering exceptional results that brighten and enhance your environment.</p>
+    
+        <h2>Our Painting Services Include:</h2>
+        <ul>
+            <li><strong>Interior Painting:</strong> Revitalize your home with a fresh coat of paint in the colors you love.</li>
+            <li><strong>Exterior Painting:</strong> Protect and beautify your property’s exterior with durable and weather-resistant paints.</li>
+            <li><strong>Commercial Painting:</strong> Professional painting services tailored to your business needs, ensuring minimal disruption.</li>
+            <li><strong>Custom Finishes:</strong> Explore creative finishes and techniques for a unique touch.</li>
+            <li><strong>Color Consultation:</strong> Expert advice on color choices to help you find the perfect palette.</li>
+        </ul>
+
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card border-white rounded-3 h-100">
+                    <img src="paint1.jpg" class="card-img-top fixed-image">
+                    <div class="card-body rounded-bottom h-100" style="background: linear-gradient(45deg, rgb(0, 92, 197), rgb(150, 150, 196), rgb(28, 56, 90))">
+                        <p class="card-text text-center text-white" style="height:10px"><b>Stunning interior transformations.</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-white rounded-3 h-100">
+                    <img src="paint2.png" class="card-img-top fixed-image">
+                    <div class="card-body rounded-bottom h-100" style="background: linear-gradient(45deg, rgb(0, 92, 197), rgb(150, 150, 196), rgb(28, 56, 90))">
+                        <p class="card-text text-center text-white" style="height:50px"><b>Expert exterior painting solutions.</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-white rounded-3 h-100">
+                    <img src="paint3.jpg" class="card-img-top fixed-image">
+                    <div class="card-body rounded-bottom h-100" style="background: linear-gradient(45deg, rgb(0, 92, 197), rgb(150, 150, 196), rgb(28, 56, 90))">
+                        <p class="card-text text-center text-white" style="height:50px"><b>Custom finishes for unique styles.</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <h2 class="pt-5">Why Choose Us for Your Painting Needs?</h2>
+        <ul>
+            <li><strong>Quality Workmanship:</strong> Our experienced painters deliver flawless results every time.</li>
+            <li><strong>Customer Satisfaction:</strong> We prioritize your vision and satisfaction throughout the project.</li>
+            <li><strong>Affordable Pricing:</strong> Competitive rates without compromising on quality.</li>
+        </ul>
+    
+        <p>Transform your space with our expert painting services! Contact us today or visit our site to learn more about our offerings.</p>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="card text-center bg-dark text-white" style="border-radius: 0px; margin-top: 50px;">
+                <div class="card-body">
+                    <h5 class="card-title">Painting Company</h5>
+                    <p class="card-text">All Rights Reserved.</p>
+                    <div class="d-flex justify-content-center">
+                        <a href="https://www.facebook.com/" class="text-white me-3" style="text-decoration: none;"><i class="fa-brands fa-facebook fa-lg"></i> Facebook</a>
+                        <a href="https://www.instagram.com/" class="text-white me-3" style="text-decoration: none;"><i class="fa-brands fa-instagram fa-lg"></i> Instagram</a>
+                        <a href="https://x.com/" class="text-white me-3" style="text-decoration: none;"><i class="fa-brands fa-x-twitter fa-lg"></i> Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
